@@ -23,6 +23,7 @@ class ArchivosController extends Controller
 
     public function descargar_archivo(){
 
+        //Esta busca la ULR del archivo
         $archivo =  Storage::url('logo.png');
 
         if (Storage::disk('public')->exists('storage/logo.png')) {
